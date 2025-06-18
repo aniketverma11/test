@@ -1,0 +1,121 @@
+body {
+  background: #232323;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 0;
+}
+
+.beautiful-calculator {
+  background: #f8fafc;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #0002;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beautiful-calculator h1 {
+  margin-bottom: 1.2rem;
+  color: #00bfae;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calc-panel {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.calc-input, .calc-select {
+  padding: 0.7rem 1rem;
+  border: 1px solid #b2dfdb;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  background: #393939;
+  color: #e0e0e0;
+  transition: border 0.2s, background 0.2s;
+  min-width: 150px;
+  box-sizing: border-box;
+}
+
+.calc-input:focus, .calc-select:focus {
+  border: 1.5px solid #00bfae;
+  background: #232323;
+}
+
+.calc-select {
+  min-width: 55px;
+  text-align: center;
+  background: #393939;
+  color: #e0e0e0;
+}
+
+.calc-btn {
+  background: linear-gradient(90deg, #00bfae 60%, #00e6e6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-weight: 600;
+  box-shadow: 0 2px 8px #00bfae22;
+  margin-left: 0.7rem;
+}
+
+.calc-btn:hover {
+  background: linear-gradient(90deg, #00e6e6 60%, #00bfae 100%);
+  box-shadow: 0 4px 16px #00bfae33;
+}
+
+.result.success {
+  color: #388e3c;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.error.fail {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.calc-footer {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.calc-footer a {
+  color: #00bfae;
+  text-decoration: underline;
+  margin: 0 0.2rem;
+}
