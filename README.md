@@ -30,8 +30,8 @@ This repository is an example project built using GitHub Copilot Agent. It demon
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/aniketverma11/testrepo.git
-cd testrepo
+git clone https://github.com/aniketverma11/copilot-example-calculator.git
+cd copilot-example-calculator
 ```
 
 #### 2. Setting up the Backend (FastAPI)
@@ -66,7 +66,7 @@ By default, the frontend will run at [http://localhost:5173](http://localhost:51
 ## Project Structure
 
 ```
-testrepo/
+copilot-example-calculator/
 │
 ├── backend/         # FastAPI app (Python)
 │   ├── main.py
